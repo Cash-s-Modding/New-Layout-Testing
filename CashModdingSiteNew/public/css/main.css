@@ -71,9 +71,22 @@ nav ul {
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (25%)[4];
-      grid-template-columns: repeat(4, 25%);
+  gap: 2rem;
   width: 85%;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    -ms-grid-rows: (25%)[4];
+        grid-template-rows: repeat(4, 25%);
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  nav ul {
+    -ms-grid-columns: (25%)[4];
+        grid-template-columns: repeat(4, 25%);
+  }
 }
 
 nav ul a {
@@ -122,30 +135,6 @@ nav ul li {
 .show-menu li:nth-of-type(4) {
   -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
           animation: menu-item-anim .6s forwards 1.6s ease-in-out;
-}
-
-.show-menu li:nth-of-type(5) {
-  -webkit-animation: menu-item-anim .6s forwards 1.8s ease-in-out;
-          animation: menu-item-anim .6s forwards 1.8s ease-in-out;
-  padding-top: 5em;
-}
-
-.show-menu li:nth-of-type(6) {
-  -webkit-animation: menu-item-anim .6s forwards 2s ease-in-out;
-          animation: menu-item-anim .6s forwards 2s ease-in-out;
-  padding-top: 5em;
-}
-
-.show-menu li:nth-of-type(7) {
-  -webkit-animation: menu-item-anim .6s forwards 2.2s ease-in-out;
-          animation: menu-item-anim .6s forwards 2.2s ease-in-out;
-  padding-top: 5em;
-}
-
-.show-menu li:nth-of-type(8) {
-  -webkit-animation: menu-item-anim .6s forwards 2.4s ease-in-out;
-          animation: menu-item-anim .6s forwards 2.4s ease-in-out;
-  padding-top: 5em;
 }
 
 .hide-menu {

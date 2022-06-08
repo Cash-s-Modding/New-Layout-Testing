@@ -3,9 +3,7 @@ Testing our new layouts
 
 ## Has been configured for:
 * Desktop
-
-## Not configured for:
-* Mobile
+- Most Mobile Devices
 - Tablet
 
 ## How To Preview
