@@ -7,5 +7,8 @@ Testing our new layouts
 - Tablet
 
 ## How To Preview
-1. Copy Repo
+1. Run:
+```
+gh repo clone Cash-s-Modding/New-Layout-Testing
+```
 2. Open The Index File
