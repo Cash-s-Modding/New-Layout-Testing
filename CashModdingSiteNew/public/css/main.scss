@@ -39,9 +39,26 @@ section {
 
     h1 {
         font-size: 4em;
-        margin: 1em auto;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
         width: 70%;
         color: white;
+    }
+
+    h2 {
+        font-size: 2em;
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+        }
+        @media only screen and (min-width: 601px) {
+            width: 60%;
+        }
+        margin: 0.2em auto;
+        color: white;
+        font-weight: 300;
+        font-style: italic;
     }
     
 }

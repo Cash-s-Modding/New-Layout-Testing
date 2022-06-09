@@ -35,9 +35,32 @@ section {
 
 section h1 {
   font-size: 4em;
-  margin: 1em auto;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
   width: 70%;
   color: white;
+}
+
+section h2 {
+  font-size: 2em;
+  margin: 0.2em auto;
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  section h2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  section h2 {
+    width: 60%;
+  }
 }
 
 .menu-btn:hover {
