@@ -43,6 +43,21 @@ section h1 {
   color: white;
 }
 
+.mods {
+  list-style-type: none;
+  margin: 10% auto 0 auto;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+
+.mods a {
+  color: #bababa;
+  font-weight: bold;
+  font-size: 2em;
+}
+
 .menu-btn:hover {
   cursor: pointer;
 }

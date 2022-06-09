@@ -49,6 +49,20 @@ section {
     
 }
 
+.mods {
+    list-style-type: none;
+    margin: 10% auto 0 auto;
+    padding: 0;
+    display: grid;
+    gap: 2rem;
+
+    a {
+        color: rgb(186, 186, 186);
+        font-weight: bold;
+        font-size: 2em;
+    }
+}
+
 .menu-btn:hover {
     cursor: pointer;
 }
