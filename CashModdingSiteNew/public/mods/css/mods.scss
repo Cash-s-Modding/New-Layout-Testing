@@ -75,7 +75,7 @@ section {
     }
 
     a {
-        color: #D1D1D1;
+        color: #f7f7f7;
         font-weight: 200;
         font-style: italic;
         font-size: 1.5em;
@@ -89,7 +89,12 @@ section {
     }
 
     li {
-        margin-bottom: 5em;
+        @media only screen and (max-width: 600px) {
+            margin-bottom: 0%;
+        }
+        @media only screen and (min-width: 601px) {
+            margin-bottom: 5em;
+        }
     }
 }
 

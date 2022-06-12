@@ -82,7 +82,7 @@ section h1 {
 }
 
 .mods a {
-  color: #D1D1D1;
+  color: #f7f7f7;
   font-weight: 200;
   font-style: italic;
   font-size: 1.5em;
@@ -95,8 +95,16 @@ section h1 {
   border-radius: 8%;
 }
 
-.mods li {
-  margin-bottom: 5em;
+@media only screen and (max-width: 600px) {
+  .mods li {
+    margin-bottom: 0%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .mods li {
+    margin-bottom: 5em;
+  }
 }
 
 .menu-btn:hover {
