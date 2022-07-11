@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
-  background: url("../../assets/Background2.jpeg") no-repeat center center fixed;
+  background: url("../../../assets/Background2.jpeg") no-repeat center center fixed;
   background-size: cover;
   background-color: whitesmoke;
 }
@@ -39,25 +39,30 @@ section h1 {
   color: white;
 }
 
-.links {
+.mods {
   justify-content: center;
   list-style-type: none;
   margin: 5% auto 0 auto;
   padding: 0;
   display: grid;
   gap: 1rem;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(2, 50%);
 }
-.links h2 {
+@media only screen and (max-width: 600px) {
+  .mods {
+    grid-template-rows: repeat(3, 25%);
+  }
+}
+@media only screen and (min-width: 601px) {
+  .mods {
+    grid-template-columns: repeat(3, 25%);
+  }
+}
+.mods h2 {
   color: rgb(207, 207, 207);
   font-weight: bold;
   font-size: 2.2em;
 }
-.links .links-bottom {
-  margin-top: 2.3em;
-}
-.links a {
+.mods a {
   color: #f7f7f7;
   font-weight: 200;
   font-style: italic;
@@ -70,8 +75,15 @@ section h1 {
   border: 2px solid #636363;
   border-radius: 8%;
 }
-.links li {
-  margin-bottom: 0%;
+@media only screen and (max-width: 600px) {
+  .mods li {
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .mods li {
+    margin-bottom: 5em;
+  }
 }
 
 .menu-btn:hover {
@@ -244,4 +256,4 @@ nav ul li {
     transform: translateY(0);
     opacity: 1;
   }
-}/*# sourceMappingURL=github.css.map */
+}/*# sourceMappingURL=viewsource.css.map */
