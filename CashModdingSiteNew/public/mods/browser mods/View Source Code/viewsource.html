@@ -47,10 +47,10 @@
 
   <section>
     <h1>Browser Mods</h1>
-    <ul class="mods">
+    <ul class="steps">
         <li>
             <h2>1- Copy the code below</h2>
-            <a href="#">Copy Code</a>
+            <a class="copy btn" onclick="Copy();">Copy Code</a>
         </li>
         <li>
             <h2>Edit</h2>
@@ -70,6 +70,10 @@
     function delay(time) {
       return new Promise(resolve => setTimeout(resolve, time));
     } 
+
+    function Copy() {
+      navigator.clipboard.writeText("test");
+    }
 
     document.getElementById("open-menu").addEventListener("click", function() {
       overlay.classList.remove("hide-menu");

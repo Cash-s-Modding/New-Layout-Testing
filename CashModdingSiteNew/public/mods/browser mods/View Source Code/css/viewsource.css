@@ -43,7 +43,7 @@ section h1 {
   color: white;
 }
 
-.mods {
+.steps {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -56,26 +56,26 @@ section h1 {
 }
 
 @media only screen and (max-width: 600px) {
-  .mods {
+  .steps {
     -ms-grid-rows: (25%)[3];
         grid-template-rows: repeat(3, 25%);
   }
 }
 
 @media only screen and (min-width: 601px) {
-  .mods {
-    -ms-grid-columns: (25%)[3];
-        grid-template-columns: repeat(3, 25%);
+  .steps {
+    -ms-grid-rows: (25%)[3];
+        grid-template-rows: repeat(3, 25%);
   }
 }
 
-.mods h2 {
+.steps h2 {
   color: #cfcfcf;
   font-weight: bold;
   font-size: 2.2em;
 }
 
-.mods a {
+.steps a {
   color: #f7f7f7;
   font-weight: 200;
   font-style: italic;
@@ -87,16 +87,17 @@ section h1 {
   padding-bottom: 0.2em;
   border: 2px solid #636363;
   border-radius: 8%;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
-  .mods li {
+  .steps li {
     margin-bottom: 0%;
   }
 }
 
 @media only screen and (min-width: 601px) {
-  .mods li {
+  .steps li {
     margin-bottom: 5em;
   }
 }
