@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>View Source Code</title>
-  <link rel="stylesheet" href="css/viewsource.css">
+  <title>Edit</title>
+  <link rel="stylesheet" href="css/edit.css">
 </head>
 <body>
 
@@ -40,7 +40,7 @@
   </section>
 
   <section>
-    <h1>View Source</h1>
+    <h1>Edit</h1>
     <ul class="steps">
         <li>
             <h2>1- Copy the code below</h2>
@@ -56,7 +56,7 @@
           <h2>4- Next put anything you want for the title<br>And paste in the copied text from earlier.<br>After that select the save button.</h2>
         </li>
         <li>
-          <h2>--How to use it--<br>Click the bookmark you made in the bookmarks bar<br>(If you do not see it try Ctrl+Shift+B)</h2>
+          <h2>--How to use it--<br>Click the bookmark you made in the bookmarks bar.<br>(If you do not see it try Ctrl+Shift+B)</h2>
         </li>
     </ul>
   </section>
@@ -72,7 +72,7 @@
     } 
 
     document.getElementById("copy-btn").addEventListener("click", function() {
-    fetch('viewsourcecopy.txt')
+    fetch('editcopy.txt')
         .then(response => response.text())
         .then(data => {
   	    const copystep = data

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
-  background: url("../../../assets/Background2.jpeg") no-repeat center center fixed;
+  background: url("../../../../assets/Background2.jpeg") no-repeat center center fixed;
   background-size: cover;
   background-color: whitesmoke;
 }
@@ -43,7 +43,7 @@ section h1 {
   color: white;
 }
 
-.mods {
+.steps {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -56,30 +56,26 @@ section h1 {
 }
 
 @media only screen and (max-width: 600px) {
-  .mods {
+  .steps {
     -ms-grid-rows: (25%)[3];
         grid-template-rows: repeat(3, 25%);
   }
 }
 
 @media only screen and (min-width: 601px) {
-  .mods {
-    -ms-grid-columns: (25%)[3];
-        grid-template-columns: repeat(3, 25%);
+  .steps {
+    -ms-grid-rows: (25%)[3];
+        grid-template-rows: repeat(3, 25%);
   }
 }
 
-.mods h2 {
+.steps h2 {
   color: #cfcfcf;
   font-weight: bold;
   font-size: 2.2em;
 }
 
-.mods h3 {
-  color: #cfcfcf;
-}
-
-.mods a {
+.steps a {
   color: #f7f7f7;
   font-weight: 200;
   font-style: italic;
@@ -91,16 +87,17 @@ section h1 {
   padding-bottom: 0.2em;
   border: 2px solid #636363;
   border-radius: 8%;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
-  .mods li {
+  .steps li {
     margin-bottom: 0%;
   }
 }
 
 @media only screen and (min-width: 601px) {
-  .mods li {
+  .steps li {
     margin-bottom: 5em;
   }
 }
@@ -313,4 +310,4 @@ nav ul li {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=browser.css.map */
+/*# sourceMappingURL=edit.css.map */
